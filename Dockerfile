@@ -5,4 +5,5 @@ ADD . /build
 
 WORKDIR /opt/logstash
 RUN     bin/logstash-plugin install /build/logstash-output-cloudwatchlogs-2.0.0.pre1.gem
+RUN     bin/logstash-plugin install logstash-filter-json_encode
 WORKDIR /
